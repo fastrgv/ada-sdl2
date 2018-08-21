@@ -7,7 +7,8 @@ SDL2 version 2.0.8.
 To use the binding you will need a recent Ada compiler.
 
 I have tested some parts of the binding with 
-AdaCore2017, AdaCore2018, and GnuAda730.
+AdaCore2017, AdaCore2018, and GnuAda730
+on OSX, Windows (32+64), Linux(mint).
 
 Note that this binding does NOT include
 .) SDL2-image,
