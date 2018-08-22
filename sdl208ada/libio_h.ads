@@ -3,7 +3,7 @@ pragma Style_Checks (Off);
 with Interfaces.C; use Interfaces.C;
 with System;
 with Interfaces.C.Strings;
-with x86_64_linux_gnu_bits_types_h;
+--with x86_64_linux_gnu_bits_types_h;
 with stddef_h;
 
 package libio_h is
@@ -108,12 +108,13 @@ package libio_h is
       u_chain : access u_IO_FILE;  -- /usr/include/libio.h:262
       u_fileno : aliased int;  -- /usr/include/libio.h:264
       u_flags2 : aliased int;  -- /usr/include/libio.h:268
-      u_old_offset : aliased x86_64_linux_gnu_bits_types_h.uu_off_t;  -- /usr/include/libio.h:270
+      u_old_offset : aliased interfaces.c.long;  -- /usr/include/libio.h:270
       u_cur_column : aliased unsigned_short;  -- /usr/include/libio.h:274
       u_vtable_offset : aliased signed_char;  -- /usr/include/libio.h:275
       u_shortbuf : aliased char;  -- /usr/include/libio.h:276
       u_lock : System.Address;  -- /usr/include/libio.h:280
-      u_offset : aliased x86_64_linux_gnu_bits_types_h.uu_off64_t;  -- /usr/include/libio.h:289
+      --u_offset : aliased x86_64_linux_gnu_bits_types_h.uu_off64_t;  -- /usr/include/libio.h:289
+      u_offset : aliased interfaces.c.long;  -- /usr/include/libio.h:289
       uu_pad1 : System.Address;  -- /usr/include/libio.h:297
       uu_pad2 : System.Address;  -- /usr/include/libio.h:298
       uu_pad3 : System.Address;  -- /usr/include/libio.h:299
@@ -187,14 +188,19 @@ package libio_h is
       read : access function
            (arg1 : System.Address;
             arg2 : Interfaces.C.Strings.chars_ptr;
-            arg3 : stddef_h.size_t) return x86_64_linux_gnu_bits_types_h.uu_ssize_t;  -- /usr/include/libio.h:366
+            arg3 : stddef_h.size_t) 
+				--return x86_64_linux_gnu_bits_types_h.uu_ssize_t;  -- /usr/include/libio.h:366
+				return interfaces.c.long;  -- /usr/include/libio.h:366
       write : access function
            (arg1 : System.Address;
             arg2 : Interfaces.C.Strings.chars_ptr;
-            arg3 : stddef_h.size_t) return x86_64_linux_gnu_bits_types_h.uu_ssize_t;  -- /usr/include/libio.h:367
+            arg3 : stddef_h.size_t) 
+				--return x86_64_linux_gnu_bits_types_h.uu_ssize_t;  -- /usr/include/libio.h:367
+				return interfaces.c.long;  -- /usr/include/libio.h:367
       seek : access function
            (arg1 : System.Address;
-            arg2 : access x86_64_linux_gnu_bits_types_h.uu_off64_t;
+            --arg2 : access x86_64_linux_gnu_bits_types_h.uu_off64_t;
+            arg2 : access interfaces.c.long;
             arg3 : int) return int;  -- /usr/include/libio.h:368
       close : access function (arg1 : System.Address) return int;  -- /usr/include/libio.h:369
    end record;

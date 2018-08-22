@@ -1,7 +1,7 @@
 pragma Style_Checks (Off);
 
 with Interfaces.C; use Interfaces.C;
-with x86_64_linux_gnu_sys_types_h;
+--with x86_64_linux_gnu_sys_types_h;
 with stdint_h;
 with stddef_h;
 with System;
@@ -128,53 +128,63 @@ package SDL_stdinc_h is
       SDL_TRUE);
    pragma Convention (C, SDL_bool);  -- ../inc208/SDL_stdinc.h:143
 
-  --*
-  -- * \brief A signed 8-bit integer type.
-  --  
 
-   subtype Sint8 is x86_64_linux_gnu_sys_types_h.int8_t;  -- ../inc208/SDL_stdinc.h:151
 
-  --*
-  -- * \brief An unsigned 8-bit integer type.
-  --  
 
-   subtype Uint8 is stdint_h.uint8_t;  -- ../inc208/SDL_stdinc.h:157
 
-  --*
-  -- * \brief A signed 16-bit integer type.
-  --  
 
-   subtype Sint16 is x86_64_linux_gnu_sys_types_h.int16_t;  -- ../inc208/SDL_stdinc.h:163
 
-  --*
-  -- * \brief An unsigned 16-bit integer type.
-  --  
 
-   subtype Uint16 is stdint_h.uint16_t;  -- ../inc208/SDL_stdinc.h:169
 
-  --*
-  -- * \brief A signed 32-bit integer type.
-  --  
 
-   subtype Sint32 is x86_64_linux_gnu_sys_types_h.int32_t;  -- ../inc208/SDL_stdinc.h:175
 
-  --*
-  -- * \brief An unsigned 32-bit integer type.
-  --  
 
-   subtype Uint32 is stdint_h.uint32_t;  -- ../inc208/SDL_stdinc.h:181
 
-  --*
-  -- * \brief A signed 64-bit integer type.
-  --  
 
-   subtype Sint64 is x86_64_linux_gnu_sys_types_h.int64_t;  -- ../inc208/SDL_stdinc.h:188
 
-  --*
-  -- * \brief An unsigned 64-bit integer type.
-  --  
 
-   subtype Uint64 is stdint_h.uint64_t;  -- ../inc208/SDL_stdinc.h:194
+   type Uint8 is mod 2**8;
+   for Uint8'Size use 8;
+   pragma Convention (C, Uint8);
+
+   type Uint16 is mod 2**16;
+   for Uint16'Size use 16;
+   pragma Convention (C, Uint16);
+
+   type Uint32 is mod 2**32;
+   for Uint32'Size use 32;
+   pragma Convention (C, Uint32);
+
+   type Uint64 is mod 2**64;
+   for Uint64'Size use 64;
+   pragma Convention (C, Uint64);
+
+   type Sint8 is range -2**7 .. 2**7 - 1;
+   for Sint8'Size use 8;
+   pragma Convention (C, Sint8);
+
+   type Sint16 is range -2**15 .. 2**15 - 1;
+   for Sint16'Size use 16;
+   pragma Convention (C, Sint16);
+
+   type Sint32 is range -2**31 .. 2**31 - 1;
+   for Sint32'Size use 32;
+   pragma Convention (C, Sint32);
+
+   type Sint64 is range -2**63 .. 2**63 - 1;
+   for Sint64'Size use 64;
+   pragma Convention (C, Sint64);
+
+
+
+
+
+
+
+
+
+
+
 
   -- @}  
   -- Basic data types  
