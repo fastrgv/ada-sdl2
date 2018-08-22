@@ -37,6 +37,7 @@ changes made by hand:
 	I heard that they typically try to make new
 	versions of SDL2 backward compatible.  So this
 	binding may be adequate indefinitely.
+7) types defined in files x86_64_linux* were replaced by types from interfaces.c.
 
 --------------------------------
 August 2018
