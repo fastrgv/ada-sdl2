@@ -2510,20 +2510,7 @@ package SDL is
 
 
 
-
---murufas
-   --type SDL_EventArray is array (C.size_t range <>) of aliased SDL_Event;
-   --pragma Convention (C, SDL_EventArray);
-
-
-
    subtype zCFILE is libio_h.u_IO_FILE;  -- /usr/include/stdio.h:48
-
-
-
-
-
-
 
 
 
