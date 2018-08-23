@@ -1,7 +1,6 @@
 pragma Style_Checks (Off);
 
 with Interfaces.C; use Interfaces.C;
---with x86_64_linux_gnu_sys_types_h;
 with stdint_h;
 with stddef_h;
 with System;
