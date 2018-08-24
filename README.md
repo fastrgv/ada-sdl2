@@ -40,7 +40,6 @@ Note that this binding is used in my apps "AdaGate" and "AdaVenture".
 
 --------------------------------
 August 2018
-[fastrgv@gmail.com]
 
 
 
