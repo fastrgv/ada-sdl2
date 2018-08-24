@@ -11,8 +11,11 @@ AdaCore2017, AdaCore2018, and GnuAda730
 on OSX, Windows (32+64), Linux(mint).
 
 Note that this binding does NOT include
+
 .) SDL2-image,
+
 .) SDL2-ttf,
+
 .) SDL2-mixer.
 
 
@@ -30,13 +33,7 @@ changes made by hand:
 	b) libio_h.ads
 	c) sdl_events_h.ads
 5) the contents of sdl_h.ads was moved into sdl.ads
-6) stdio_h.ads was omitted, as well as several other
-	generated specs that seemed unused.  Thus, the
-	resulting binding may be incomplete...yet, more
-	complete than my previous binding to SDL2.  Moreover,
-	I heard that they typically try to make new
-	versions of SDL2 backward compatible.  So this
-	binding may be adequate indefinitely.
+6) stdio_h.ads was omitted, as well as several other generated specs that seemed unused.  Thus, the resulting binding may be incomplete.  I believe that new versions of SDL2 are backward compatible, so this binding may be adequate indefinitely.
 7) types defined in files x86_64_linux* were replaced by types from interfaces.c.
 
 --------------------------------
