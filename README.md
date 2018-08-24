@@ -37,13 +37,9 @@ changes made by hand:
 7) types defined in files x86_64_linux* were replaced by types from interfaces.c.
 
 Note that this binding is used in my apps "AdaGate" and "AdaVenture".
-
---------------------------------
 August 2018
 
-
-
-
+--------------------------------
 
  Copyright (C) 2018  <fastrgv@gmail.com>
 
