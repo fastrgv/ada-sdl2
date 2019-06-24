@@ -9,159 +9,159 @@ with System;
 package SDL_hints_h is
 
 
-	SDL_ONE : chars_ptr := new_string("1"&ascii.nul);
-   SDL_HINT_FRAMEBUFFER_ACCELERATION : chars_ptr := new_string("SDL_FRAMEBUFFER_ACCELERATION" & ASCII.NUL);  --  ../inc209/SDL_hints.h:65
+	SDL_ONE : constant chars_ptr := new_string("1"&ascii.nul);
+   SDL_HINT_FRAMEBUFFER_ACCELERATION : constant chars_ptr := new_string("SDL_FRAMEBUFFER_ACCELERATION" & ASCII.NUL);  --  ../inc209/SDL_hints.h:65
 
-   SDL_HINT_RENDER_DRIVER : chars_ptr := new_string("SDL_RENDER_DRIVER" & ASCII.NUL);  --  ../inc209/SDL_hints.h:85
+   SDL_HINT_RENDER_DRIVER : constant chars_ptr := new_string("SDL_RENDER_DRIVER" & ASCII.NUL);  --  ../inc209/SDL_hints.h:85
 
-   SDL_HINT_RENDER_OPENGL_SHADERS : chars_ptr := new_string("SDL_RENDER_OPENGL_SHADERS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:96
+   SDL_HINT_RENDER_OPENGL_SHADERS : constant chars_ptr := new_string("SDL_RENDER_OPENGL_SHADERS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:96
 
-   SDL_HINT_RENDER_DIRECT3D_THREADSAFE : chars_ptr := new_string("SDL_RENDER_DIRECT3D_THREADSAFE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:107
+   SDL_HINT_RENDER_DIRECT3D_THREADSAFE : constant chars_ptr := new_string("SDL_RENDER_DIRECT3D_THREADSAFE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:107
 
-   SDL_HINT_RENDER_DIRECT3D11_DEBUG : chars_ptr := new_string("SDL_RENDER_DIRECT3D11_DEBUG" & ASCII.NUL);  --  ../inc209/SDL_hints.h:120
+   SDL_HINT_RENDER_DIRECT3D11_DEBUG : constant chars_ptr := new_string("SDL_RENDER_DIRECT3D11_DEBUG" & ASCII.NUL);  --  ../inc209/SDL_hints.h:120
 
-   SDL_HINT_RENDER_LOGICAL_SIZE_MODE : chars_ptr := new_string("SDL_RENDER_LOGICAL_SIZE_MODE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:131
+   SDL_HINT_RENDER_LOGICAL_SIZE_MODE : constant chars_ptr := new_string("SDL_RENDER_LOGICAL_SIZE_MODE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:131
 
-   SDL_HINT_RENDER_SCALE_QUALITY : chars_ptr := new_string("SDL_RENDER_SCALE_QUALITY" & ASCII.NUL);  --  ../inc209/SDL_hints.h:143
+   SDL_HINT_RENDER_SCALE_QUALITY : constant chars_ptr := new_string("SDL_RENDER_SCALE_QUALITY" & ASCII.NUL);  --  ../inc209/SDL_hints.h:143
 
-   SDL_HINT_RENDER_VSYNC : chars_ptr := new_string("SDL_RENDER_VSYNC" & ASCII.NUL);
+   SDL_HINT_RENDER_VSYNC : constant chars_ptr := new_string("SDL_RENDER_VSYNC" & ASCII.NUL);
 
-   SDL_HINT_VIDEO_ALLOW_SCREENSAVER : chars_ptr := new_string("SDL_VIDEO_ALLOW_SCREENSAVER" & ASCII.NUL);  --  ../inc209/SDL_hints.h:165
+   SDL_HINT_VIDEO_ALLOW_SCREENSAVER : constant chars_ptr := new_string("SDL_VIDEO_ALLOW_SCREENSAVER" & ASCII.NUL);  --  ../inc209/SDL_hints.h:165
 
-   SDL_HINT_VIDEO_X11_XVIDMODE : chars_ptr := new_string("SDL_VIDEO_X11_XVIDMODE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:176
+   SDL_HINT_VIDEO_X11_XVIDMODE : constant chars_ptr := new_string("SDL_VIDEO_X11_XVIDMODE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:176
 
-   SDL_HINT_VIDEO_X11_XINERAMA : chars_ptr := new_string("SDL_VIDEO_X11_XINERAMA" & ASCII.NUL);  --  ../inc209/SDL_hints.h:187
+   SDL_HINT_VIDEO_X11_XINERAMA : constant chars_ptr := new_string("SDL_VIDEO_X11_XINERAMA" & ASCII.NUL);  --  ../inc209/SDL_hints.h:187
 
-   SDL_HINT_VIDEO_X11_XRANDR : chars_ptr := new_string("SDL_VIDEO_X11_XRANDR" & ASCII.NUL);  --  ../inc209/SDL_hints.h:198
+   SDL_HINT_VIDEO_X11_XRANDR : constant chars_ptr := new_string("SDL_VIDEO_X11_XRANDR" & ASCII.NUL);  --  ../inc209/SDL_hints.h:198
 
-   SDL_HINT_VIDEO_X11_NET_WM_PING : chars_ptr := new_string("SDL_VIDEO_X11_NET_WM_PING" & ASCII.NUL);  --  ../inc209/SDL_hints.h:212
+   SDL_HINT_VIDEO_X11_NET_WM_PING : constant chars_ptr := new_string("SDL_VIDEO_X11_NET_WM_PING" & ASCII.NUL);  --  ../inc209/SDL_hints.h:212
 
-   SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR : chars_ptr := new_string("SDL_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR" & ASCII.NUL);  --  ../inc209/SDL_hints.h:224
+   SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR : constant chars_ptr := new_string("SDL_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR" & ASCII.NUL);  --  ../inc209/SDL_hints.h:224
 
-   SDL_HINT_WINDOW_FRAME_USABLE_WHILE_CURSOR_HIDDEN : chars_ptr := new_string("SDL_WINDOW_FRAME_USABLE_WHILE_CURSOR_HIDDEN" & ASCII.NUL);  --  ../inc209/SDL_hints.h:235
+   SDL_HINT_WINDOW_FRAME_USABLE_WHILE_CURSOR_HIDDEN : constant chars_ptr := new_string("SDL_WINDOW_FRAME_USABLE_WHILE_CURSOR_HIDDEN" & ASCII.NUL);  --  ../inc209/SDL_hints.h:235
 
-   SDL_HINT_WINDOWS_INTRESOURCE_ICON : chars_ptr := new_string("SDL_WINDOWS_INTRESOURCE_ICON" & ASCII.NUL);  --  ../inc209/SDL_hints.h:240
-   SDL_HINT_WINDOWS_INTRESOURCE_ICON_SMALL : chars_ptr := new_string("SDL_WINDOWS_INTRESOURCE_ICON_SMALL" & ASCII.NUL);  --  ../inc209/SDL_hints.h:241
+   SDL_HINT_WINDOWS_INTRESOURCE_ICON : constant chars_ptr := new_string("SDL_WINDOWS_INTRESOURCE_ICON" & ASCII.NUL);  --  ../inc209/SDL_hints.h:240
+   SDL_HINT_WINDOWS_INTRESOURCE_ICON_SMALL : constant chars_ptr := new_string("SDL_WINDOWS_INTRESOURCE_ICON_SMALL" & ASCII.NUL);  --  ../inc209/SDL_hints.h:241
 
-   SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP : chars_ptr := new_string("SDL_WINDOWS_ENABLE_MESSAGELOOP" & ASCII.NUL);  --  ../inc209/SDL_hints.h:252
+   SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP : constant chars_ptr := new_string("SDL_WINDOWS_ENABLE_MESSAGELOOP" & ASCII.NUL);  --  ../inc209/SDL_hints.h:252
 
-   SDL_HINT_GRAB_KEYBOARD : chars_ptr := new_string("SDL_GRAB_KEYBOARD" & ASCII.NUL);  --  ../inc209/SDL_hints.h:263
+   SDL_HINT_GRAB_KEYBOARD : constant chars_ptr := new_string("SDL_GRAB_KEYBOARD" & ASCII.NUL);  --  ../inc209/SDL_hints.h:263
 
-   SDL_HINT_MOUSE_DOUBLE_CLICK_TIME : chars_ptr := new_string("SDL_MOUSE_DOUBLE_CLICK_TIME" & ASCII.NUL);  --  ../inc209/SDL_hints.h:268
+   SDL_HINT_MOUSE_DOUBLE_CLICK_TIME : constant chars_ptr := new_string("SDL_MOUSE_DOUBLE_CLICK_TIME" & ASCII.NUL);  --  ../inc209/SDL_hints.h:268
 
-   SDL_HINT_MOUSE_DOUBLE_CLICK_RADIUS : chars_ptr := new_string("SDL_MOUSE_DOUBLE_CLICK_RADIUS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:273
+   SDL_HINT_MOUSE_DOUBLE_CLICK_RADIUS : constant chars_ptr := new_string("SDL_MOUSE_DOUBLE_CLICK_RADIUS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:273
 
-   SDL_HINT_MOUSE_NORMAL_SPEED_SCALE : chars_ptr := new_string("SDL_MOUSE_NORMAL_SPEED_SCALE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:278
+   SDL_HINT_MOUSE_NORMAL_SPEED_SCALE : constant chars_ptr := new_string("SDL_MOUSE_NORMAL_SPEED_SCALE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:278
 
-   SDL_HINT_MOUSE_RELATIVE_SPEED_SCALE : chars_ptr := new_string("SDL_MOUSE_RELATIVE_SPEED_SCALE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:283
+   SDL_HINT_MOUSE_RELATIVE_SPEED_SCALE : constant chars_ptr := new_string("SDL_MOUSE_RELATIVE_SPEED_SCALE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:283
 
-   SDL_HINT_MOUSE_RELATIVE_MODE_WARP : chars_ptr := new_string("SDL_MOUSE_RELATIVE_MODE_WARP" & ASCII.NUL);  --  ../inc209/SDL_hints.h:294
+   SDL_HINT_MOUSE_RELATIVE_MODE_WARP : constant chars_ptr := new_string("SDL_MOUSE_RELATIVE_MODE_WARP" & ASCII.NUL);  --  ../inc209/SDL_hints.h:294
 
-   SDL_HINT_MOUSE_FOCUS_CLICKTHROUGH : chars_ptr := new_string("SDL_MOUSE_FOCUS_CLICKTHROUGH" & ASCII.NUL);  --  ../inc209/SDL_hints.h:305
+   SDL_HINT_MOUSE_FOCUS_CLICKTHROUGH : constant chars_ptr := new_string("SDL_MOUSE_FOCUS_CLICKTHROUGH" & ASCII.NUL);  --  ../inc209/SDL_hints.h:305
 
-   SDL_HINT_TOUCH_MOUSE_EVENTS : chars_ptr := new_string("SDL_TOUCH_MOUSE_EVENTS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:316
+   SDL_HINT_TOUCH_MOUSE_EVENTS : constant chars_ptr := new_string("SDL_TOUCH_MOUSE_EVENTS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:316
 
-   SDL_HINT_VIDEO_MINIMIZE_ON_FOCUS_LOSS : chars_ptr := new_string("SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:322
+   SDL_HINT_VIDEO_MINIMIZE_ON_FOCUS_LOSS : constant chars_ptr := new_string("SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:322
 
-   SDL_HINT_IDLE_TIMER_DISABLED : chars_ptr := new_string("SDL_IOS_IDLE_TIMER_DISABLED" & ASCII.NUL);  --  ../inc209/SDL_hints.h:339
+   SDL_HINT_IDLE_TIMER_DISABLED : constant chars_ptr := new_string("SDL_IOS_IDLE_TIMER_DISABLED" & ASCII.NUL);  --  ../inc209/SDL_hints.h:339
 
-   SDL_HINT_ORIENTATIONS : chars_ptr := new_string("SDL_IOS_ORIENTATIONS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:350
+   SDL_HINT_ORIENTATIONS : constant chars_ptr := new_string("SDL_IOS_ORIENTATIONS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:350
 
-   SDL_HINT_APPLE_TV_CONTROLLER_UI_EVENTS : chars_ptr := new_string("SDL_APPLE_TV_CONTROLLER_UI_EVENTS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:368
+   SDL_HINT_APPLE_TV_CONTROLLER_UI_EVENTS : constant chars_ptr := new_string("SDL_APPLE_TV_CONTROLLER_UI_EVENTS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:368
 
-   SDL_HINT_APPLE_TV_REMOTE_ALLOW_ROTATION : chars_ptr := new_string("SDL_APPLE_TV_REMOTE_ALLOW_ROTATION" & ASCII.NUL);  --  ../inc209/SDL_hints.h:378
+   SDL_HINT_APPLE_TV_REMOTE_ALLOW_ROTATION : constant chars_ptr := new_string("SDL_APPLE_TV_REMOTE_ALLOW_ROTATION" & ASCII.NUL);  --  ../inc209/SDL_hints.h:378
 
-   SDL_HINT_IOS_HIDE_HOME_INDICATOR : chars_ptr := new_string("SDL_IOS_HIDE_HOME_INDICATOR" & ASCII.NUL);  --  ../inc209/SDL_hints.h:389
+   SDL_HINT_IOS_HIDE_HOME_INDICATOR : constant chars_ptr := new_string("SDL_IOS_HIDE_HOME_INDICATOR" & ASCII.NUL);  --  ../inc209/SDL_hints.h:389
 
-   SDL_HINT_ACCELEROMETER_AS_JOYSTICK : chars_ptr := new_string("SDL_ACCELEROMETER_AS_JOYSTICK" & ASCII.NUL);  --  ../inc209/SDL_hints.h:399
+   SDL_HINT_ACCELEROMETER_AS_JOYSTICK : constant chars_ptr := new_string("SDL_ACCELEROMETER_AS_JOYSTICK" & ASCII.NUL);  --  ../inc209/SDL_hints.h:399
 
-   SDL_HINT_TV_REMOTE_AS_JOYSTICK : chars_ptr := new_string("SDL_TV_REMOTE_AS_JOYSTICK" & ASCII.NUL);  --  ../inc209/SDL_hints.h:409
+   SDL_HINT_TV_REMOTE_AS_JOYSTICK : constant chars_ptr := new_string("SDL_TV_REMOTE_AS_JOYSTICK" & ASCII.NUL);  --  ../inc209/SDL_hints.h:409
 
-   SDL_HINT_XINPUT_ENABLED : chars_ptr := new_string("SDL_XINPUT_ENABLED" & ASCII.NUL);  --  ../inc209/SDL_hints.h:418
+   SDL_HINT_XINPUT_ENABLED : constant chars_ptr := new_string("SDL_XINPUT_ENABLED" & ASCII.NUL);  --  ../inc209/SDL_hints.h:418
 
-   SDL_HINT_XINPUT_USE_OLD_JOYSTICK_MAPPING : chars_ptr := new_string("SDL_XINPUT_USE_OLD_JOYSTICK_MAPPING" & ASCII.NUL);  --  ../inc209/SDL_hints.h:427
+   SDL_HINT_XINPUT_USE_OLD_JOYSTICK_MAPPING : constant chars_ptr := new_string("SDL_XINPUT_USE_OLD_JOYSTICK_MAPPING" & ASCII.NUL);  --  ../inc209/SDL_hints.h:427
 
-   SDL_HINT_GAMECONTROLLERCONFIG : chars_ptr := new_string("SDL_GAMECONTROLLERCONFIG" & ASCII.NUL);  --  ../inc209/SDL_hints.h:437
+   SDL_HINT_GAMECONTROLLERCONFIG : constant chars_ptr := new_string("SDL_GAMECONTROLLERCONFIG" & ASCII.NUL);  --  ../inc209/SDL_hints.h:437
 
-   SDL_HINT_GAMECONTROLLER_IGNORE_DEVICES : chars_ptr := new_string("SDL_GAMECONTROLLER_IGNORE_DEVICES" & ASCII.NUL);  --  ../inc209/SDL_hints.h:450
+   SDL_HINT_GAMECONTROLLER_IGNORE_DEVICES : constant chars_ptr := new_string("SDL_GAMECONTROLLER_IGNORE_DEVICES" & ASCII.NUL);  --  ../inc209/SDL_hints.h:450
 
-   SDL_HINT_GAMECONTROLLER_IGNORE_DEVICES_EXCEPT : chars_ptr := new_string("SDL_GAMECONTROLLER_IGNORE_DEVICES_EXCEPT" & ASCII.NUL);  --  ../inc209/SDL_hints.h:463
+   SDL_HINT_GAMECONTROLLER_IGNORE_DEVICES_EXCEPT : constant chars_ptr := new_string("SDL_GAMECONTROLLER_IGNORE_DEVICES_EXCEPT" & ASCII.NUL);  --  ../inc209/SDL_hints.h:463
 
-   SDL_HINT_JOYSTICK_ALLOW_BACKGROUND_EVENTS : chars_ptr := new_string("SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:476
+   SDL_HINT_JOYSTICK_ALLOW_BACKGROUND_EVENTS : constant chars_ptr := new_string("SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:476
 
-   SDL_HINT_JOYSTICK_HIDAPI : chars_ptr := new_string("SDL_JOYSTICK_HIDAPI" & ASCII.NUL);  --  ../inc209/SDL_hints.h:487
+   SDL_HINT_JOYSTICK_HIDAPI : constant chars_ptr := new_string("SDL_JOYSTICK_HIDAPI" & ASCII.NUL);  --  ../inc209/SDL_hints.h:487
 
-   SDL_HINT_JOYSTICK_HIDAPI_PS4 : chars_ptr := new_string("SDL_JOYSTICK_HIDAPI_PS4" & ASCII.NUL);  --  ../inc209/SDL_hints.h:498
+   SDL_HINT_JOYSTICK_HIDAPI_PS4 : constant chars_ptr := new_string("SDL_JOYSTICK_HIDAPI_PS4" & ASCII.NUL);  --  ../inc209/SDL_hints.h:498
 
-   SDL_HINT_JOYSTICK_HIDAPI_PS4_RUMBLE : chars_ptr := new_string("SDL_JOYSTICK_HIDAPI_PS4_RUMBLE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:513
+   SDL_HINT_JOYSTICK_HIDAPI_PS4_RUMBLE : constant chars_ptr := new_string("SDL_JOYSTICK_HIDAPI_PS4_RUMBLE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:513
 
-   SDL_HINT_JOYSTICK_HIDAPI_STEAM : chars_ptr := new_string("SDL_JOYSTICK_HIDAPI_STEAM" & ASCII.NUL);  --  ../inc209/SDL_hints.h:524
+   SDL_HINT_JOYSTICK_HIDAPI_STEAM : constant chars_ptr := new_string("SDL_JOYSTICK_HIDAPI_STEAM" & ASCII.NUL);  --  ../inc209/SDL_hints.h:524
 
-   SDL_HINT_JOYSTICK_HIDAPI_SWITCH : chars_ptr := new_string("SDL_JOYSTICK_HIDAPI_SWITCH" & ASCII.NUL);  --  ../inc209/SDL_hints.h:535
+   SDL_HINT_JOYSTICK_HIDAPI_SWITCH : constant chars_ptr := new_string("SDL_JOYSTICK_HIDAPI_SWITCH" & ASCII.NUL);  --  ../inc209/SDL_hints.h:535
 
-   SDL_HINT_JOYSTICK_HIDAPI_XBOX : chars_ptr := new_string("SDL_JOYSTICK_HIDAPI_XBOX" & ASCII.NUL);  --  ../inc209/SDL_hints.h:546
+   SDL_HINT_JOYSTICK_HIDAPI_XBOX : constant chars_ptr := new_string("SDL_JOYSTICK_HIDAPI_XBOX" & ASCII.NUL);  --  ../inc209/SDL_hints.h:546
 
-   SDL_HINT_ENABLE_STEAM_CONTROLLERS : chars_ptr := new_string("SDL_ENABLE_STEAM_CONTROLLERS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:557
+   SDL_HINT_ENABLE_STEAM_CONTROLLERS : constant chars_ptr := new_string("SDL_ENABLE_STEAM_CONTROLLERS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:557
 
-   SDL_HINT_ALLOW_TOPMOST : chars_ptr := new_string("SDL_ALLOW_TOPMOST" & ASCII.NUL);  --  ../inc209/SDL_hints.h:568
+   SDL_HINT_ALLOW_TOPMOST : constant chars_ptr := new_string("SDL_ALLOW_TOPMOST" & ASCII.NUL);  --  ../inc209/SDL_hints.h:568
 
-   SDL_HINT_TIMER_RESOLUTION : chars_ptr := new_string("SDL_TIMER_RESOLUTION" & ASCII.NUL);  --  ../inc209/SDL_hints.h:584
+   SDL_HINT_TIMER_RESOLUTION : constant chars_ptr := new_string("SDL_TIMER_RESOLUTION" & ASCII.NUL);  --  ../inc209/SDL_hints.h:584
 
-   SDL_HINT_QTWAYLAND_CONTENT_ORIENTATION : chars_ptr := new_string("SDL_QTWAYLAND_CONTENT_ORIENTATION" & ASCII.NUL);  --  ../inc209/SDL_hints.h:602
+   SDL_HINT_QTWAYLAND_CONTENT_ORIENTATION : constant chars_ptr := new_string("SDL_QTWAYLAND_CONTENT_ORIENTATION" & ASCII.NUL);  --  ../inc209/SDL_hints.h:602
 
-   SDL_HINT_QTWAYLAND_WINDOW_FLAGS : chars_ptr := new_string("SDL_QTWAYLAND_WINDOW_FLAGS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:613
+   SDL_HINT_QTWAYLAND_WINDOW_FLAGS : constant chars_ptr := new_string("SDL_QTWAYLAND_WINDOW_FLAGS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:613
 
-   SDL_HINT_THREAD_STACK_SIZE : chars_ptr := new_string("SDL_THREAD_STACK_SIZE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:627
+   SDL_HINT_THREAD_STACK_SIZE : constant chars_ptr := new_string("SDL_THREAD_STACK_SIZE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:627
 
-   SDL_HINT_VIDEO_HIGHDPI_DISABLED : chars_ptr := new_string("SDL_VIDEO_HIGHDPI_DISABLED" & ASCII.NUL);  --  ../inc209/SDL_hints.h:632
+   SDL_HINT_VIDEO_HIGHDPI_DISABLED : constant chars_ptr := new_string("SDL_VIDEO_HIGHDPI_DISABLED" & ASCII.NUL);  --  ../inc209/SDL_hints.h:632
 
-   SDL_HINT_MAC_CTRL_CLICK_EMULATE_RIGHT_CLICK : chars_ptr := new_string("SDL_MAC_CTRL_CLICK_EMULATE_RIGHT_CLICK" & ASCII.NUL);  --  ../inc209/SDL_hints.h:640
+   SDL_HINT_MAC_CTRL_CLICK_EMULATE_RIGHT_CLICK : constant chars_ptr := new_string("SDL_MAC_CTRL_CLICK_EMULATE_RIGHT_CLICK" & ASCII.NUL);  --  ../inc209/SDL_hints.h:640
 
-   SDL_HINT_VIDEO_WIN_D3DCOMPILER : chars_ptr := new_string("SDL_VIDEO_WIN_D3DCOMPILER" & ASCII.NUL);  --  ../inc209/SDL_hints.h:656
+   SDL_HINT_VIDEO_WIN_D3DCOMPILER : constant chars_ptr := new_string("SDL_VIDEO_WIN_D3DCOMPILER" & ASCII.NUL);  --  ../inc209/SDL_hints.h:656
 
-   SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT : chars_ptr := new_string("SDL_VIDEO_WINDOW_SHARE_PIXEL_FORMAT" & ASCII.NUL);  --  ../inc209/SDL_hints.h:675
+   SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT : constant chars_ptr := new_string("SDL_VIDEO_WINDOW_SHARE_PIXEL_FORMAT" & ASCII.NUL);  --  ../inc209/SDL_hints.h:675
 
-   SDL_HINT_WINRT_PRIVACY_POLICY_URL : chars_ptr := new_string("SDL_WINRT_PRIVACY_POLICY_URL" & ASCII.NUL);  --  ../inc209/SDL_hints.h:701
+   SDL_HINT_WINRT_PRIVACY_POLICY_URL : constant chars_ptr := new_string("SDL_WINRT_PRIVACY_POLICY_URL" & ASCII.NUL);  --  ../inc209/SDL_hints.h:701
 
-   SDL_HINT_WINRT_PRIVACY_POLICY_LABEL : chars_ptr := new_string("SDL_WINRT_PRIVACY_POLICY_LABEL" & ASCII.NUL);  --  ../inc209/SDL_hints.h:722
+   SDL_HINT_WINRT_PRIVACY_POLICY_LABEL : constant chars_ptr := new_string("SDL_WINRT_PRIVACY_POLICY_LABEL" & ASCII.NUL);  --  ../inc209/SDL_hints.h:722
 
-   SDL_HINT_WINRT_HANDLE_BACK_BUTTON : chars_ptr := new_string("SDL_WINRT_HANDLE_BACK_BUTTON" & ASCII.NUL);  --  ../inc209/SDL_hints.h:774
+   SDL_HINT_WINRT_HANDLE_BACK_BUTTON : constant chars_ptr := new_string("SDL_WINRT_HANDLE_BACK_BUTTON" & ASCII.NUL);  --  ../inc209/SDL_hints.h:774
 
-   SDL_HINT_VIDEO_MAC_FULLSCREEN_SPACES : chars_ptr := new_string("SDL_VIDEO_MAC_FULLSCREEN_SPACES" & ASCII.NUL);  --  ../inc209/SDL_hints.h:793
+   SDL_HINT_VIDEO_MAC_FULLSCREEN_SPACES : constant chars_ptr := new_string("SDL_VIDEO_MAC_FULLSCREEN_SPACES" & ASCII.NUL);  --  ../inc209/SDL_hints.h:793
 
-   SDL_HINT_MAC_BACKGROUND_APP : chars_ptr := new_string("SDL_MAC_BACKGROUND_APP" & ASCII.NUL);  --  ../inc209/SDL_hints.h:801
+   SDL_HINT_MAC_BACKGROUND_APP : constant chars_ptr := new_string("SDL_MAC_BACKGROUND_APP" & ASCII.NUL);  --  ../inc209/SDL_hints.h:801
 
-   SDL_HINT_ANDROID_APK_EXPANSION_MAIN_FILE_VERSION : chars_ptr := new_string("SDL_ANDROID_APK_EXPANSION_MAIN_FILE_VERSION" & ASCII.NUL);  --  ../inc209/SDL_hints.h:813
+   SDL_HINT_ANDROID_APK_EXPANSION_MAIN_FILE_VERSION : constant chars_ptr := new_string("SDL_ANDROID_APK_EXPANSION_MAIN_FILE_VERSION" & ASCII.NUL);  --  ../inc209/SDL_hints.h:813
 
-   SDL_HINT_ANDROID_APK_EXPANSION_PATCH_FILE_VERSION : chars_ptr := new_string("SDL_ANDROID_APK_EXPANSION_PATCH_FILE_VERSION" & ASCII.NUL);  --  ../inc209/SDL_hints.h:825
+   SDL_HINT_ANDROID_APK_EXPANSION_PATCH_FILE_VERSION : constant chars_ptr := new_string("SDL_ANDROID_APK_EXPANSION_PATCH_FILE_VERSION" & ASCII.NUL);  --  ../inc209/SDL_hints.h:825
 
-   SDL_HINT_IME_INTERNAL_EDITING : chars_ptr := new_string("SDL_IME_INTERNAL_EDITING" & ASCII.NUL);  --  ../inc209/SDL_hints.h:837
+   SDL_HINT_IME_INTERNAL_EDITING : constant chars_ptr := new_string("SDL_IME_INTERNAL_EDITING" & ASCII.NUL);  --  ../inc209/SDL_hints.h:837
 
-   SDL_HINT_ANDROID_SEPARATE_MOUSE_AND_TOUCH : chars_ptr := new_string("SDL_ANDROID_SEPARATE_MOUSE_AND_TOUCH" & ASCII.NUL);  --  ../inc209/SDL_hints.h:849
+   SDL_HINT_ANDROID_SEPARATE_MOUSE_AND_TOUCH : constant chars_ptr := new_string("SDL_ANDROID_SEPARATE_MOUSE_AND_TOUCH" & ASCII.NUL);  --  ../inc209/SDL_hints.h:849
 
-   SDL_HINT_ANDROID_TRAP_BACK_BUTTON : chars_ptr := new_string("SDL_ANDROID_TRAP_BACK_BUTTON" & ASCII.NUL);  --  ../inc209/SDL_hints.h:866
+   SDL_HINT_ANDROID_TRAP_BACK_BUTTON : constant chars_ptr := new_string("SDL_ANDROID_TRAP_BACK_BUTTON" & ASCII.NUL);  --  ../inc209/SDL_hints.h:866
 
-   SDL_HINT_RETURN_KEY_HIDES_IME : chars_ptr := new_string("SDL_RETURN_KEY_HIDES_IME" & ASCII.NUL);  --  ../inc209/SDL_hints.h:878
+   SDL_HINT_RETURN_KEY_HIDES_IME : constant chars_ptr := new_string("SDL_RETURN_KEY_HIDES_IME" & ASCII.NUL);  --  ../inc209/SDL_hints.h:878
 
-   SDL_HINT_EMSCRIPTEN_KEYBOARD_ELEMENT : chars_ptr := new_string("SDL_EMSCRIPTEN_KEYBOARD_ELEMENT" & ASCII.NUL);  --  ../inc209/SDL_hints.h:892
+   SDL_HINT_EMSCRIPTEN_KEYBOARD_ELEMENT : constant chars_ptr := new_string("SDL_EMSCRIPTEN_KEYBOARD_ELEMENT" & ASCII.NUL);  --  ../inc209/SDL_hints.h:892
 
-   SDL_HINT_NO_SIGNAL_HANDLERS : chars_ptr := new_string("SDL_NO_SIGNAL_HANDLERS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:904
+   SDL_HINT_NO_SIGNAL_HANDLERS : constant chars_ptr := new_string("SDL_NO_SIGNAL_HANDLERS" & ASCII.NUL);  --  ../inc209/SDL_hints.h:904
 
-   SDL_HINT_WINDOWS_NO_CLOSE_ON_ALT_F4 : chars_ptr := new_string("SDL_WINDOWS_NO_CLOSE_ON_ALT_F4" & ASCII.NUL);  --  ../inc209/SDL_hints.h:913
+   SDL_HINT_WINDOWS_NO_CLOSE_ON_ALT_F4 : constant chars_ptr := new_string("SDL_WINDOWS_NO_CLOSE_ON_ALT_F4" & ASCII.NUL);  --  ../inc209/SDL_hints.h:913
 
-   SDL_HINT_BMP_SAVE_LEGACY_FORMAT : chars_ptr := new_string("SDL_BMP_SAVE_LEGACY_FORMAT" & ASCII.NUL);  --  ../inc209/SDL_hints.h:932
+   SDL_HINT_BMP_SAVE_LEGACY_FORMAT : constant chars_ptr := new_string("SDL_BMP_SAVE_LEGACY_FORMAT" & ASCII.NUL);  --  ../inc209/SDL_hints.h:932
 
-   SDL_HINT_WINDOWS_DISABLE_THREAD_NAMING : chars_ptr := new_string("SDL_WINDOWS_DISABLE_THREAD_NAMING" & ASCII.NUL);  --  ../inc209/SDL_hints.h:948
+   SDL_HINT_WINDOWS_DISABLE_THREAD_NAMING : constant chars_ptr := new_string("SDL_WINDOWS_DISABLE_THREAD_NAMING" & ASCII.NUL);  --  ../inc209/SDL_hints.h:948
 
-   SDL_HINT_RPI_VIDEO_LAYER : chars_ptr := new_string("SDL_RPI_VIDEO_LAYER" & ASCII.NUL);  --  ../inc209/SDL_hints.h:956
+   SDL_HINT_RPI_VIDEO_LAYER : constant chars_ptr := new_string("SDL_RPI_VIDEO_LAYER" & ASCII.NUL);  --  ../inc209/SDL_hints.h:956
 
-   SDL_HINT_VIDEO_DOUBLE_BUFFER : chars_ptr := new_string("SDL_VIDEO_DOUBLE_BUFFER" & ASCII.NUL);  --  ../inc209/SDL_hints.h:974
+   SDL_HINT_VIDEO_DOUBLE_BUFFER : constant chars_ptr := new_string("SDL_VIDEO_DOUBLE_BUFFER" & ASCII.NUL);  --  ../inc209/SDL_hints.h:974
 
-   SDL_HINT_OPENGL_ES_DRIVER : chars_ptr := new_string("SDL_OPENGL_ES_DRIVER" & ASCII.NUL);  --  ../inc209/SDL_hints.h:1005
+   SDL_HINT_OPENGL_ES_DRIVER : constant chars_ptr := new_string("SDL_OPENGL_ES_DRIVER" & ASCII.NUL);  --  ../inc209/SDL_hints.h:1005
 
-   SDL_HINT_AUDIO_RESAMPLING_MODE : chars_ptr := new_string("SDL_AUDIO_RESAMPLING_MODE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:1031
+   SDL_HINT_AUDIO_RESAMPLING_MODE : constant chars_ptr := new_string("SDL_AUDIO_RESAMPLING_MODE" & ASCII.NUL);  --  ../inc209/SDL_hints.h:1031
 
-   SDL_HINT_AUDIO_CATEGORY : chars_ptr := new_string("SDL_AUDIO_CATEGORY" & ASCII.NUL);  --  ../inc209/SDL_hints.h:1044
+   SDL_HINT_AUDIO_CATEGORY : constant chars_ptr := new_string("SDL_AUDIO_CATEGORY" & ASCII.NUL);  --  ../inc209/SDL_hints.h:1044
 
 
 
