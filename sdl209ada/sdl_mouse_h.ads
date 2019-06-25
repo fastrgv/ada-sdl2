@@ -12,7 +12,7 @@ package SDL_mouse_h is
    --    return 2 ** ((X)-1);
    SDL_BUTTON_LEFT : constant := 1;  --  ../inc209/SDL_mouse.h:282
    SDL_BUTTON_MIDDLE : constant := 2;  --  ../inc209/SDL_mouse.h:283
-   SDL_BUTTON_RIGHT : constant := 3;  --  ../inc209/SDL_mouse.h:284
+   SDL_BUTTON_RIGHT : constant := 4;  -- fastrgv: kludge
    SDL_BUTTON_X1 : constant := 4;  --  ../inc209/SDL_mouse.h:285
    SDL_BUTTON_X2 : constant := 5;  --  ../inc209/SDL_mouse.h:286
    --  unsupported macro: SDL_BUTTON_LMASK SDL_BUTTON(SDL_BUTTON_LEFT)
