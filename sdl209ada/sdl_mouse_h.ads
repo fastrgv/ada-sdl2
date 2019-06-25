@@ -8,13 +8,18 @@ limited with SDL_surface_h;
 
 package SDL_mouse_h is
 
+	-- macro for use as a mask when testing buttons in buttonstate:
    --  arg-macro: function SDL_BUTTON (X)
    --    return 2 ** ((X)-1);
-   SDL_BUTTON_LEFT : constant := 1;  --  ../inc209/SDL_mouse.h:282
-   SDL_BUTTON_MIDDLE : constant := 2;  --  ../inc209/SDL_mouse.h:283
-   SDL_BUTTON_RIGHT : constant := 4;  -- fastrgv: kludge
-   SDL_BUTTON_X1 : constant := 4;  --  ../inc209/SDL_mouse.h:285
-   SDL_BUTTON_X2 : constant := 5;  --  ../inc209/SDL_mouse.h:286
+	--
+	-- fastrgv:  inserting macro output values directly...
+	--
+   SDL_BUTTON_LEFT : constant := 2**0; --1;  --  ../inc209/SDL_mouse.h:282
+   SDL_BUTTON_MIDDLE : constant := 2**1; --2;  --  ../inc209/SDL_mouse.h:283
+   SDL_BUTTON_RIGHT : constant := 2**2;
+   SDL_BUTTON_X1 : constant := 2**3; --4;  --  ../inc209/SDL_mouse.h:285
+   SDL_BUTTON_X2 : constant := 2**4; --5;  --  ../inc209/SDL_mouse.h:286
+
    --  unsupported macro: SDL_BUTTON_LMASK SDL_BUTTON(SDL_BUTTON_LEFT)
    --  unsupported macro: SDL_BUTTON_MMASK SDL_BUTTON(SDL_BUTTON_MIDDLE)
    --  unsupported macro: SDL_BUTTON_RMASK SDL_BUTTON(SDL_BUTTON_RIGHT)
