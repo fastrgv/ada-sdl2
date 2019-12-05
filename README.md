@@ -14,7 +14,7 @@ Note that this binding does NOT include
 
 * SDL2-mixer.
 
-but IS, or will be, used in my apps "AdaGate" and "AdaVenture".
+but IS used in my apps "AdaGate" and "AdaVenture".
 
 5dec2019 update:  Difficulties trying to prepare SDL2 v2.0.10 prompted adding additional files for the completeness of this repository, including the include files and library files for v2.0.9 for 3 platforms.
 
