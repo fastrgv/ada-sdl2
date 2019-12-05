@@ -16,7 +16,7 @@ Note that this binding does NOT include
 
 but IS, or will be, used in my apps "AdaGate" and "AdaVenture".
 
-5dec2019 update:  Difficulties trying to work with SDL2 v2.0.10 prompted adding additional files for the completeness of this repository, including the includes and libraries for v2.0.9.
+5dec2019 update:  Difficulties trying to work with SDL2 v2.0.10 prompted adding additional files for the completeness of this repository, including the includes and libraries for v2.0.9 for 3 platforms.
 
 
 
