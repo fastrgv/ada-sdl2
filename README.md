@@ -16,7 +16,7 @@ Note that this binding does NOT include
 
 but IS used in my games "AdaGate" and "AdaVenture".
 
-5dec2019 update:  Difficulties trying to prepare SDL2 v2.0.10 prompted adding additional files for the completeness of this repository, including the include files and library files for v2.0.9 for 3 platforms.
+5dec2019 update:  Due to difficulties trying to prepare SDL2 v2.0.10, I decided to add files to complete this repository, including the include files and library files for v2.0.9 for 3 platforms.
 
 
 
