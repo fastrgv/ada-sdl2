@@ -14,7 +14,7 @@ Note that this binding does NOT include
 
 * SDL2-mixer.
 
-but IS used in my games "AdaGate" and "AdaVenture".
+but was used in my games "AdaGate" and "AdaVenture".
 
 5dec2019 update:  Due to difficulties trying to prepare SDL2 v2.0.10, I decided to add files to complete this repository, including the include files and library files for v2.0.9 for 3 platforms.
 
